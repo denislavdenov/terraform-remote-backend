@@ -10,7 +10,7 @@
    }
    ```
 3. Run `terraform init` and `terraform apply` so you create a local state file first.
-4. Add .terraform folder and terraform.tfstate* to .gitignore if you are going to use this code within GH repo
+4. Add `.terraform` folder and `terraform.tfstate*` to `.gitignore` if you are going to use this code within GH repo
 5. Go to Terraform Enterprise and create and organization and a new workspace choosing None as a source.
 6. Add the following code to your main.tf file
    ```
