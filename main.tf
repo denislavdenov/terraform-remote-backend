@@ -1,6 +1,6 @@
 terraform {
   backend "atlas" {
-    name    = "ddenov/tf-atlas-backend"
+    name    = "ddenov/tf-atlas"
   }
 }
 
