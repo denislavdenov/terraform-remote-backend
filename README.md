@@ -27,7 +27,7 @@
    ```
 7. You need to go to your user's settings in TFE and create a new Token and copy it somewere.
 
-<img src="screenshots.token.png" width="65%" height="65%" />
+<img src="screenshots/token.png" width="65%" height="65%" />
 
 8. Run `terraform init` in order initialize Terraform with the new backend that is going to be used.
    You are going to be asked for your access token that you just created.
