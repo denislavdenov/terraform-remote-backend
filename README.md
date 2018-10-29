@@ -1,6 +1,6 @@
 # Sample repo showing how to store your Terraform state file on a remote backend on Terrraform Enterprise Atlas backend
 
-1. Create a free tier Terraform Enterprise account.
+1. Create Terraform Enterprise account.
 2. Create a main.tf file with a null resource or any other
    ```
    resource "null_resource" "helloWorld" {
@@ -13,7 +13,9 @@
 4. Add `.terraform` folder and `terraform.tfstate*` to `.gitignore` if you are going to use this code within GH repo
 5. Go to Terraform Enterprise and create and organization and a new workspace choosing None as a source.
 
-<img src="https://cvws.icloud-content.com/B/AfBM9Hv1BjYXE13GYHMyp7fqHgsUAfQBidMKNEw35dv4KgnM580JbFaj/Screen+Shot+2018-10-25+at+17.48.07.png?o=AgvjtcvwmhJMd399jcFXO_pLiKNi63KcAI-XhZaQKr11&v=1&x=3&a=B6wPcZ5dOdjLNf7NZEXKDiWcNWZdAzXTRgEAAAMm00Y&e=1540799301&k=GLffb64sfqBat30-78eqAw&fl=&r=15d57656-3863-4cbb-9641-560f504c9070-1&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=22&s=74S9J3LJJ8saUXM0N0PWhZxCxEw&cd=i" width="160" height="160" /> <img src="https://cvws.icloud-content.com/B/AYJEBHDxuM81b1k7i9H79CMRYhJ7ATCUIrCIp98DSQkQxmWdomkS4HmC/Screen+Shot+2018-10-25+at+17.48.55.png?o=Au8moGmYk-B2PAJeGvda-OPa6tS-iUcGgMOWVy4bIlk0&v=1&x=3&a=Bw827OvszWoYq7IZOpBkR0-Vi9iNAzvTRgEAAAMs00Y&e=1540799678&k=LEOVNJe9CvuhGUgj0dddCA&fl=&r=c9f690b2-fa4a-4f3a-8941-4bf3e84a8828-1&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=22&s=wOM_EvziMTUH7oN99b1J6DAoO1I&cd=i" width="160" height="160" /> <img src="https://cvws.icloud-content.com/B/Af_lUV2LSdpANlfFC5eVacAf5az6Aa9NjCW4AJglkXzT_ZNpD0YaEoji/Screen+Shot+2018-10-25+at+17.48.22.png?o=AkDzAUeMIaMXJTOSBOCJ9gMAELLF_ADds18NRI3yqr7l&v=1&x=3&a=B-AIrHD_h80uc0jExJtXtosLLj3FAzvTRgEAAAMs00Y&e=1540799675&k=wyhrnCEk5ZtjlhJ0bH9yWg&fl=&r=12c4362a-656f-4043-8a2e-788aac4d43eb-1&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=22&s=7qv6SedH9inUzRRH6nYoouB_YJw&cd=i" width="55%" height="100" />
+<img src="https://cvws.icloud-content.com/B/AfBM9Hv1BjYXE13GYHMyp7fqHgsUAfQBidMKNEw35dv4KgnM580JbFaj/Screen+Shot+2018-10-25+at+17.48.07.png?o=AgvjtcvwmhJMd399jcFXO_pLiKNi63KcAI-XhZaQKr11&v=1&x=3&a=B6wPcZ5dOdjLNf7NZEXKDiWcNWZdAzXTRgEAAAMm00Y&e=1540799301&k=GLffb64sfqBat30-78eqAw&fl=&r=15d57656-3863-4cbb-9641-560f504c9070-1&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=22&s=74S9J3LJJ8saUXM0N0PWhZxCxEw&cd=i" width="160" height="160" /> 
+<img src="https://cvws.icloud-content.com/B/AYJEBHDxuM81b1k7i9H79CMRYhJ7ATCUIrCIp98DSQkQxmWdomkS4HmC/Screen+Shot+2018-10-25+at+17.48.55.png?o=Au8moGmYk-B2PAJeGvda-OPa6tS-iUcGgMOWVy4bIlk0&v=1&x=3&a=Bw827OvszWoYq7IZOpBkR0-Vi9iNAzvTRgEAAAMs00Y&e=1540799678&k=LEOVNJe9CvuhGUgj0dddCA&fl=&r=c9f690b2-fa4a-4f3a-8941-4bf3e84a8828-1&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=22&s=wOM_EvziMTUH7oN99b1J6DAoO1I&cd=i" width="160" height="160" /> 
+<img src="https://cvws.icloud-content.com/B/Af_lUV2LSdpANlfFC5eVacAf5az6Aa9NjCW4AJglkXzT_ZNpD0YaEoji/Screen+Shot+2018-10-25+at+17.48.22.png?o=AkDzAUeMIaMXJTOSBOCJ9gMAELLF_ADds18NRI3yqr7l&v=1&x=3&a=B-AIrHD_h80uc0jExJtXtosLLj3FAzvTRgEAAAMs00Y&e=1540799675&k=wyhrnCEk5ZtjlhJ0bH9yWg&fl=&r=12c4362a-656f-4043-8a2e-788aac4d43eb-1&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=22&s=7qv6SedH9inUzRRH6nYoouB_YJw&cd=i" width="55%" height="100" />
 
 6. Add the following code to your main.tf file
    ```
